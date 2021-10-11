@@ -1,0 +1,424 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto";
+    font-size: 13px;
+}
+
+p{
+    color: black;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.boton{
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 20px;
+    border: none;
+}
+.boton.boton-rojo{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boton.boton-negro {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.boton.boton-negro:hover {
+    background-color: white;
+    color: black;
+
+}
+
+
+.boton.boton-blanco{
+    background-color: white;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid red;
+}
+
+header{
+    padding-top: 10px;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+header .container .logo{
+    width: 130px;
+}
+
+header .container nav a{
+    text-decoration: none;
+    color: red;
+    margin: 0 15px;
+}
+header .container .hambur {
+    display: none;
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding-bottom: 0px;
+}
+
+footer .barra-footer{
+    background-color: gray;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: -60px;
+}
+
+footer .logo-footer{
+    width: 100%;
+}
+
+footer p{
+    color: white;
+    margin-bottom: 30px;
+}
+footer a{
+    color: white;
+}
+
+footer ul{
+   padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+footer ul li{
+    margin-bottom: 10px;
+}
+footer .redes{
+  font-size: 25px;
+    display: flex;
+   margin: 0 7.5px;
+}
+footer .redes a{
+    margin: 0 7.5px;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+
+}
+
+.container-fluid{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.columna{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.columna-25{
+    width: 25%;
+}
+.columna-33{
+    width: 33.33%;
+}
+
+.columna-41{
+    width: 41.6%;
+}
+
+.empujar-58{
+    margin-left: 58.3%;
+}
+
+.empujar-66{
+    margin-left: 66.6%;
+}
+
+.columna-50{
+    width: 50%;
+}
+
+.empujar-50{
+    margin-left: 50%;
+}
+
+#Inicio{
+    position: relative;
+}
+
+#Inicio img {
+    width: 100%;
+    display: block;
+}
+
+#Inicio .bloque-inicio{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    width: 400px;
+    margin-left: -200px;
+}
+
+#Inicio .bloque-inicio h1{
+    color: white;
+    font-size: 35px;
+}
+
+#Inicio .bloque-inicio p{
+    color: white;
+
+}
+
+.seccion{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.cuadrado-perfecto{
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+.cuadrado-perfecto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#Nosotros{
+    background-image: url("img/latas.jpg");
+    background-size: cover;
+
+}
+
+#Nosotros p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+#Servicios .bloque-servicio {
+    border: 1px solid grey;
+}
+#Servicios .bloque-servicio .bloque-img-servicio.cuadrado-perfecto{
+    padding-bottom: 56.25% ;
+}
+
+#Servicios .bloque-servicio .bloque-img-servicio img{
+    width: 100%;
+}
+
+#Servicios .bloque-servicio .bloque-contenido-servicio{
+    padding: 15px;
+}
+#Servicios .bloque-servicio .bloque-contenido-servicio h3{
+    margin-top: 0;
+    font-size: 25px;
+}
+#Galeria  h4{
+    position: absolute;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    top: 40%;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+#Galeria  img{
+      filter: grayscale(1);
+}
+
+#Galeria .cuadrado-perfecto:hover img{
+    filter: grayscale(0);
+}
+
+#Galeria .cuadrado-perfecto:hover h4{
+    display: none;
+}
+
+#Contacto {
+    position: relative;
+}
+
+#Contacto iframe {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    filter: grayscale(1);
+}
+
+#Contacto iframe:hover{
+    filter: grayscale(0);
+}
+
+#Contacto form {
+    padding: 50px;
+    background-color: red;
+
+}
+
+#Contacto form .form-block{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#Contacto form .form-block .form-control{
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#Contacto form .form-block textarea{
+    display: block;
+    height: 100px;
+    font-size: 16px;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#Contacto form .form-block.bloque-ultimo{
+    margin-bottom: 0;
+
+}
+
+@media (max-width: 767px) {
+    .container
+    {
+        width: 100%;
+    }
+    .columa-mobile-100{
+        width: 100%;
+    }
+    .columa-mobile-50{
+        width: 50%;
+    }
+    .empujar-mobile-0{
+        margin-left: 0px;
+    }
+    .sinpadding-mobile{
+        padding: 0;
+    }
+
+    header .container nav{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-right: 15px;
+        padding-left: 15px;
+        top:0;
+        left:0;
+        display: flex;
+        flex-direction: column;
+         transition: all 0.4s ease;
+        transform: translateX(100%);
+    }
+    header .container nav.open{
+        transform: translateX(0);
+    }
+
+    header .container nav a{
+       font-size: 30px;
+        margin: 15px 0;
+    }
+    header .container .hambur {
+        display: block;
+        font-size: 40px;
+        color: red;
+    }
+    form .boton.boton-negro{
+        width: 100%;
+    }
+
+    #Inicio{
+        height: 100vh;
+    }
+    #Inicio img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #Servicios .bloque-servicio{
+        margin-bottom: 15px;
+    }
+    #Contacto{
+        padding: 0;
+    }
+    #Contacto iframe{
+        position: relative;
+        height: 50vh;
+    }
+    footer .logo-footer{
+       width: 50%;
+    }
+    footer .redes{
+        justify-content: center;
+    }
+    footer{
+        text-align: center;
+    }
+    .barra-footer{
+        margin-bottom: -60px;
+    }
+    .hambur{
+        position: relative;
+    }
+}
